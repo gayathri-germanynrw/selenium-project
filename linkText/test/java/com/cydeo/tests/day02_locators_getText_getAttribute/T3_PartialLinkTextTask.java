@@ -15,6 +15,7 @@ public class T3_PartialLinkTextTask {
         // 3. write "apple" in search box
         // a.Locate the search box
         WebElement googleSearchBox = driver.findElement(By.name("q"));
+        Thread.sleep(2000);
         googleSearchBox.sendKeys("apple" + Keys.ENTER);
         // b. Press ENTER to search
         //googleSearchBox.sendKeys(Keys.ENTER);

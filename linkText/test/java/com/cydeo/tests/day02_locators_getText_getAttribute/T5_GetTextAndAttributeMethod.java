@@ -1,14 +1,15 @@
 package com.cydeo.tests.day02_locators_getText_getAttribute;
 
+import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 
 public class T5_GetTextAndAttributeMethod {
     public static void main(String[] args) throws InterruptedException {
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        WebDriver driver=WebDriverFactory.getDriver("chrome");
+        System.out.println("driver = " + driver);
         driver.get("https://www.google.com");
         Thread.sleep(3000);
 
@@ -35,8 +36,6 @@ public class T5_GetTextAndAttributeMethod {
         }else {
             System.out.println("Attribute verification is FAIL  " + expectedValue);
         }
-
-
     }
 }
 
@@ -48,6 +47,4 @@ Expected: Registration form
 4- Locate “First name” input box
 5- Verify placeholder attribute’s value is as expected:
 Expected: first name
-
-
  */

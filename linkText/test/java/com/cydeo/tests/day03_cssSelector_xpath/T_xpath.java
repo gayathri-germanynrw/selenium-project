@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 
 public class T_xpath {
     public static void main(String[] args) {
+       //<@1151602558280929280> driver.findElement(By.xpath("//div[.='Accept all']")).click();
         WebDriver driver= WebDriverFactory.getDriver("chrome");
         // Go to: https://login1.nextbasecrm.com/
         driver.get("https://login1.nextbasecrm.com/");
